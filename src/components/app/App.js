@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Header from './Header';
 // import Footer from './Footer';
 import Home from './Home';
+import styles from './App.css';
 
 
 class App extends PureComponent {
@@ -20,12 +21,11 @@ class App extends PureComponent {
   render() {
 
     return (
-      // <h1>Hello</h1>
       <Router>
 
         <div className="app-container">
           <Header/>
-          <main>
+          <main className={styles.app}>
             <div className="switch">
               <Switch>
                 <Route exact path="/" component={Home}/>
