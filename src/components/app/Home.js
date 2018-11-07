@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <div className={styles.home}>
-        <h2>Welcome to Vintage Postcard Market</h2>
+        <h1>Welcome to Vintage Postcard Market</h1>
         <div className="container">
           <p></p>
         </div>

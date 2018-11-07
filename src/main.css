@@ -1,4 +1,11 @@
+
+h1 {
+  text-align: center;
+}
 body, html {
   background-image: url(./vintage-postcard-background-27842928.jpg);
-  
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
 }

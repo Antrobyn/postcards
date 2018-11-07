@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 
@@ -9,7 +9,10 @@ class Header extends PureComponent {
     return (
       <header>
         <nav>
-          <h1><NavLink exact to="/">Home</NavLink></h1>
+          <NavLink exact to="/">Home</NavLink>
+          <NavLink to="/postcards">Postcards</NavLink>
+          <NavLink to="/cart">Shopping Cart</NavLink>
+          <NavLink to="/resources">Resources</NavLink>
         </nav>
       </header>
     );
