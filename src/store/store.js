@@ -1,15 +1,15 @@
-// import { createStore, applyMiddleware, compose } from 'redux';
-// import promiseMiddleware from './promise-middleware';
+import { createStore, applyMiddleware, compose } from 'redux';
+import promiseMiddleware from './promise-middleware';
 
 
-// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-// const store = createStore(
-//   composeEnhancers(
-//     applyMiddleware(
-//       promiseMiddleware
-//     )
-//   )
-// );
+const store = createStore(
+  composeEnhancers(
+    applyMiddleware(
+      promiseMiddleware
+    )
+  )
+);
 
-// export default store;
+export default store;
